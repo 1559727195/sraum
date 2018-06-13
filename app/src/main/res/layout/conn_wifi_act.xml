@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EFEFF2"
+    android:orientation="vertical">
+    <com.yanzhenjie.statusview.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fitsView="@+id/root_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/project_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="连接Wi-Fi"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/manager_room_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="管理"
+            android:textSize="14sp"
+
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="填写要连接的无线网络"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/p25"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:id="@+id/select_wlan_rel_big"
+        android:layout_marginTop="30dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_wlan_rel"
+            android:layout_centerHorizontal="true"
+            app:layout_widthPercent="80%">
+            <TextView
+                android:id="@+id/edit_wangguan_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:text="点击选择WLAN"
+                android:textSize="14sp"
+                app:layout_widthPercent="90%" />
+
+            <ImageView
+                android:id="@+id/scan_gateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/downh"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#DBDBDD"
+            android:layout_below="@+id/select_wlan_rel"
+            app:layout_widthPercent="80%"></View>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_marginTop="15dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/per_rel_pass_lay"
+            app:layout_widthPercent="80%">
+
+            <com.Util.ClearDetailEditText
+                android:id="@+id/edit_password_gateway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:hint="密码"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/smssdk_gray"
+                android:maxLength="15"
+                android:paddingRight="10dp"
+                app:layout_widthPercent="90%" />
+
+            <ImageView
+                android:id="@+id/eyeimageview_id_gateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/eyeclose" />
+
+        </android.support.percent.PercentRelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:id="@+id/view_pass"
+            android:layout_height="1dp"
+            android:layout_below="@+id/per_rel_pass_lay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#DBDBDD"
+            app:layout_widthPercent="80%"></View>
+
+        <TextView
+            android:layout_below="@+id/view_pass"
+            android:layout_width="0dp"
+            app:layout_widthPercent="80%"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/smssdk_gray"
+            android:text="仅支持2.4GHz频率的路由器"
+            android:textSize="12sp"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+        <Button
+            android:id="@+id/conn_btn_dev"
+            app:layout_widthPercent="80%"
+            android:layout_height="@dimen/d30"
+            android:textSize="@dimen/s13"
+            android:text="下一步"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/graylinerecra"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</LinearLayout>

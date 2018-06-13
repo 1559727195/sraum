@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/startitle" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/phone_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_marginLeft="@dimen/p91"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="255px"
+        android:background="@null"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:paddingTop="@dimen/p50"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+    <RelativeLayout
+        android:id="@+id/forgetpassword_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p90"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240px"
+        android:background="@drawable/btnclick">
+
+        <TextView
+            android:id="@+id/timebutton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/p45"
+            android:text="@string/getcode"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p22" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineone"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/phone_id"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/ea" />
+
+    <View
+        android:id="@+id/linetwo"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/checkcode_id"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/ea" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/password_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_below="@+id/linetwo"
+        android:layout_marginLeft="@dimen/p91"
+        android:layout_marginRight="@dimen/p200"
+        android:background="@null"
+        android:hint="@string/passord"
+        android:inputType="number"
+        android:paddingTop="@dimen/p50"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+    <ImageView
+        android:id="@+id/regeyeone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linetwo"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p45"
+        android:src="@drawable/eyeclose" />
+
+    <View
+        android:id="@+id/linethree"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/password_id"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/ea" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/confirm_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_below="@+id/linethree"
+        android:layout_marginLeft="@dimen/p91"
+        android:layout_marginRight="@dimen/p200"
+        android:background="@null"
+        android:hint="@string/confirm"
+        android:inputType="number"
+        android:paddingTop="@dimen/p50"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+    <ImageView
+        android:id="@+id/regeyetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linethree"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p45"
+        android:src="@drawable/eyeclose" />
+
+    <View
+        android:id="@+id/linefour_id"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/confirm_id"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p200"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/ea" />
+
+    <Button
+        android:id="@+id/registbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p66"
+        android:layout_below="@+id/linefour_id"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p66"
+        android:layout_marginTop="@dimen/p116"
+        android:background="@drawable/findbtn"
+        android:text="@string/complete"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+
+    <ImageView
+        android:id="@+id/gou_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p299"
+        android:layout_marginLeft="@dimen/p64"
+        android:background="@drawable/gou" />
+
+    <TextView
+        android:id="@+id/read_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p300"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@+id/gou_id"
+        android:text="@string/read"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p300"
+        android:layout_toRightOf="@+id/read_id"
+        android:text="@string/readafter"
+        android:textColor="@color/e5c"
+        android:textSize="@dimen/p20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p22"
+        android:layout_marginLeft="@dimen/p202"
+        android:text="@string/bottom"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p20" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/checkcode_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_alignLeft="@+id/read_id"
+        android:layout_alignStart="@+id/read_id"
+        android:layout_below="@+id/lineone"
+        android:layout_marginRight="@dimen/p200"
+        android:background="@null"
+        android:hint="@string/checkcode"
+        android:inputType="number"
+        android:paddingTop="@dimen/p50"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于我的场景里面下方dialog-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d150"
+        android:background="@color/e8e"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/setimage"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d5"
+            android:src="@drawable/threelines" />
+
+        <TextView
+            android:id="@+id/functiontext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p10"
+            android:text="@string/function"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/functiontext_id"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/mrelativeone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/one"
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/white">
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/scenerename" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d10"
+                    android:text="@string/rename"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mrelativetwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/two"
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/mimageone"
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/sceneedit_scene" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d10"
+                    android:text="@string/editesce"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mrelativethree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/three"
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/mimagetwo"
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/scenetrash" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/three"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d10"
+                    android:text="@string/deletesce"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mrelativefour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/four"
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d30"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/mimagethree"
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fpanel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/four"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d10"
+                    android:text="@string/associated"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s10" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

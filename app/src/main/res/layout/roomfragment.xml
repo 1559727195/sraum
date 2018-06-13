@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于第二个room  fragment-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <GridView
+        android:id="@+id/gritviewroom_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/p17"
+        android:layout_marginRight="@dimen/p17"
+        android:horizontalSpacing="@dimen/p18"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/p14"
+        android:visibility="gone"></GridView>
+
+    <RelativeLayout
+        android:id="@+id/addroomrela_id"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/roomtext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p351"
+            android:text="@string/noroom"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p26" />
+
+        <Button
+            android:id="@+id/addroombtn_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p66"
+            android:layout_below="@+id/roomtext_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p56"
+            android:background="@drawable/golden"
+            android:text="@string/add"
+            android:textColor="@color/e0c"
+            android:textSize="@dimen/p26" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/macstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p351"
+        android:text="当前网关离线"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/addroomrelative_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle_id">
+
+        <TextView
+            android:id="@+id/roomname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="敬请期待"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/s15" />
+    </RelativeLayout>
+</RelativeLayout>

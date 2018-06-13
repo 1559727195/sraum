@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/adderela_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/maintitledialog"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textd_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p283"
+            android:layout_marginTop="@dimen/p351"
+            android:text="@string/nomac"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p26" />
+
+        <Button
+            android:id="@+id/addebtn_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p66"
+            android:layout_below="@+id/text_id"
+            android:layout_marginLeft="@dimen/p210"
+            android:layout_marginTop="@dimen/p56"
+            android:background="@drawable/golden"
+            android:text="@string/add"
+            android:textColor="@color/e0c"
+            android:textSize="@dimen/p26" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/maintitledialog"
+    android:id="@+id/line_macdevice">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85">
+        <com.xlistview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.jingchen.pulltorefresh.pullableview.PullableRefreshListView
+                android:id="@+id/maclistview_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include layout="@layout/load_more" />
+
+        </com.xlistview.PullToRefreshLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/macdevice_rel"
+        android:layout_weight="0.15">
+        <ImageView
+            android:id="@+id/addcircle_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+            android:background="@drawable/addcircle" />
+    </RelativeLayout>
+</LinearLayout>
+    <include
+        android:id="@+id/maintitledialog"
+        layout="@layout/maintitledialog" />
+</RelativeLayout>

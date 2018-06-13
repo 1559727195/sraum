@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:pivotX	float,缩放起点，或缩放原点的X轴坐标。缩放围绕这个点运行。
+    这个坐标默认是View的左上角，（0，0-->
+
+    <scale
+        android:duration = "300"
+        android:fromYScale="0.0"
+        android:fromXScale="1.0"
+        android:pivotY="0%"
+        android:pivotX="100%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        />
+</set>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/backtitle" />
+
+    <TextView
+        android:id="@+id/familytwoedit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_marginLeft="@dimen/p100"
+        android:layout_marginRight="@dimen/p138"
+        android:paddingTop="@dimen/p30"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p2"
+        android:layout_marginLeft="@dimen/p100"
+        android:layout_marginRight="@dimen/p100"
+        android:background="@color/ea" />
+
+    <TextView
+        android:id="@+id/nametwoedit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p90"
+        android:layout_marginLeft="@dimen/p100"
+        android:layout_marginRight="@dimen/p138"
+        android:paddingTop="@dimen/p30"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p2"
+        android:layout_marginLeft="@dimen/p100"
+        android:layout_marginRight="@dimen/p100"
+        android:background="@color/ea" />
+
+    <Button
+        android:id="@+id/famtwobtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p66"
+        android:layout_marginLeft="@dimen/p66"
+        android:layout_marginRight="@dimen/p66"
+        android:layout_marginTop="@dimen/p100"
+        android:background="@drawable/findbtn"
+        android:text="@string/completepass"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.massky.sraum"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 13
+        versionName "1.5.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        multiDexEnabled true//设置为支持多dex输出模式
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/cia_sdk_v_2_3_1.jar')
+    compile files('libs/EventBus2.4.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile project(':library')
+    compile files('libs/core-3.0.0.jar')
+    compile 'com.android.support:design:25.2.0'
+    compile files('libs/systembartint-1.0.4.jar')
+//    apt 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    compile files('libs/MobCommons-2016.1201.1839.jar')
+    compile files('libs/MobTools-2016.1201.1839.jar')
+    compile(name: 'SMSSDK-2.1.3', ext: 'aar')
+    compile(name: 'SMSSDKGUI-2.1.3', ext: 'aar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+    compile 'com.github.zcweng:switch-button:0.0.2@aar'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    compile files('libs/jcore-android_v1.1.1.jar')
+    compile files('libs/jpush-android_v3.0.3.jar')
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.6'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.android.support:percent:25.2.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.5'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:multidex:1.0.2'
+
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile project(':swipemenuview')
+    compile(name: 'cloudtalksdk-v2.0.4', ext: 'aar')
+    compile 'com.yanzhenjie:statusview:1.0.3'
+    compile 'com.github.lecho:hellocharts-android:v1.5.8'
+    compile 'com.feezu.liuli:timeselector:+'
+}

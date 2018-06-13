@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eb">
+
+    <include layout="@layout/backtitle" />
+    <RelativeLayout
+        android:id="@+id/detairela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/gate_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p100"
+            android:text="@string/gatedeta"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p26" />
+
+        <TextView
+            android:id="@+id/gateid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gate_id"
+            android:layout_marginTop="@dimen/p35"
+            android:layout_toRightOf="@+id/standard"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gate_id"
+            android:layout_marginRight="@dimen/p40"
+            android:layout_marginTop="@dimen/p35"
+            android:layout_toLeftOf="@+id/standard"
+            android:text="@string/gatedone"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p26" />
+
+        <TextView
+            android:id="@+id/namegate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gateid"
+            android:layout_marginRight="@dimen/p40"
+            android:layout_marginTop="@dimen/p55"
+            android:layout_toLeftOf="@+id/standard"
+            android:visibility="gone"
+            android:text="@string/gatedtwo"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p26" />
+
+        <com.Util.ClearEditText
+            android:id="@+id/gatedditext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gateid"
+            android:layout_marginTop="@dimen/p35"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/standard"
+            android:background="@drawable/typein"
+            android:paddingLeft="@dimen/p10"
+            android:textColor="@color/e30"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/p26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namegate"
+            android:layout_marginRight="@dimen/p40"
+            android:layout_marginTop="@dimen/p55"
+            android:layout_toLeftOf="@+id/standard"
+            android:text="@string/gatedthree"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p26"
+            android:id="@+id/textView" />
+
+        <com.Util.ClearEditText
+            android:id="@+id/gatedditexttwo_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/typein"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/p10"
+            android:textColor="@color/e30"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/p26"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/addsave_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gatedditexttwo_new"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p50"
+            android:background="@drawable/hsmall_black"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

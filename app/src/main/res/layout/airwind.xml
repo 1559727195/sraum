@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于空调旋风界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ede">
+
+    <ImageView
+        android:id="@+id/imageone_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p40"
+        android:layout_marginTop="@dimen/p376"
+        android:background="@drawable/lowwindh" />
+
+    <ImageView
+        android:id="@+id/imagetwo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p9"
+        android:layout_marginTop="@dimen/p376"
+        android:layout_toRightOf="@+id/imageone_id"
+        android:background="@drawable/mediumwindh" />
+
+    <ImageView
+        android:id="@+id/imagethree_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p9"
+        android:layout_marginTop="@dimen/p376"
+        android:layout_toRightOf="@+id/imagetwo_id"
+        android:background="@drawable/highwindh" />
+
+    <ImageView
+        android:id="@+id/imagefour_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagetwo_id"
+        android:layout_marginLeft="@dimen/p40"
+        android:layout_marginTop="@dimen/p43"
+        android:background="@drawable/strongwindh" />
+
+    <ImageView
+        android:id="@+id/imagefive_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagetwo_id"
+        android:layout_marginLeft="@dimen/p9"
+        android:layout_marginTop="@dimen/p43"
+        android:layout_toRightOf="@+id/imagefour_id"
+        android:background="@drawable/sendwindh" />
+
+    <ImageView
+        android:id="@+id/imagesix_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagetwo_id"
+        android:layout_marginLeft="@dimen/p9"
+        android:layout_marginTop="@dimen/p43"
+        android:layout_toRightOf="@+id/imagefive_id"
+        android:background="@drawable/auto_01" />
+</RelativeLayout>

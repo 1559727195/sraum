@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <include layout="@layout/backtitle" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p100"
+        android:text="面板详细信息"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/p120"
+        android:layout_marginTop="@dimen/p100"
+        android:text="面板MAC"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <TextView
+        android:id="@+id/panelmac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="@dimen/p100"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panelmac"
+        android:layout_marginLeft="@dimen/p120"
+        android:layout_marginTop="@dimen/p80"
+        android:text="面板类型"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <TextView
+        android:id="@+id/paneltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panelmac"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="@dimen/p80"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paneltype"
+        android:layout_marginLeft="@dimen/p120"
+        android:layout_marginTop="@dimen/p80"
+        android:text="面板名称"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/panelname"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/paneltype"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="@dimen/p60"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p28" />
+
+    <ImageButton
+        android:id="@+id/findpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panelname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p100"
+        android:background="@drawable/searchmianban" />
+</RelativeLayout>

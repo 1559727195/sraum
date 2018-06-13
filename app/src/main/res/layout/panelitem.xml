@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--关于界面item-->
+<com.example.swipemenuview.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/swipe_menu_layout">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:id="@+id/swipe_right_menu">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/discard"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="删除"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/swipe_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/imageone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@drawable/lamp" />
+
+            <TextView
+                android:id="@+id/macname_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_toRightOf="@+id/imageone"
+                android:text="@string/rmone"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/yeviewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dottedline" />
+</com.example.swipemenuview.SwipeMenuLayout>

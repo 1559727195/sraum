@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--关于界面item-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50">
+
+        <View
+            android:id="@+id/yeviewone"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="1dp"
+            android:background="@color/e2c" />
+
+        <ImageView
+            android:id="@+id/imageone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d10"
+            android:src="@drawable/lamp" />
+
+        <TextView
+            android:id="@+id/macname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_toRightOf="@+id/imageone"
+            android:text="@string/rmone"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/s13" />
+
+        <View
+            android:id="@+id/yeviewtwo"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/e2c" />
+        <View
+            android:id="@+id/three_s"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/dottedline" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

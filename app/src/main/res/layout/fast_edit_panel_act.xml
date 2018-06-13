@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/backtitle_id"
+        layout="@layout/backtitle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/smssdk_gray"
+        android:layout_centerInParent="true"
+        android:text="请保持在本页，等待面板上报信息，即可进入编辑状态"/>
+</RelativeLayout>

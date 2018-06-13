@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sexpandh">
+
+    <ImageView
+        android:id="@+id/lightimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p35"
+        android:layout_marginTop="@dimen/p118"
+        android:background="@drawable/lamph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightimage_id"
+        android:layout_marginLeft="@dimen/p57"
+        android:layout_marginTop="@dimen/p9"
+        android:text="@string/light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/p20" />
+
+    <ImageView
+        android:id="@+id/airimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p318"
+        android:layout_marginTop="@dimen/p118"
+        android:background="@drawable/condih" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airimage_id"
+        android:layout_marginLeft="@dimen/p341"
+        android:layout_marginTop="@dimen/p9"
+        android:text="@string/air"
+        android:textColor="@color/white"
+        android:textSize="@dimen/p20" />
+
+    <ImageView
+        android:id="@+id/curimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p35"
+        android:layout_marginTop="@dimen/p118"
+        android:background="@drawable/curtainh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/curimage_id"
+        android:layout_marginRight="@dimen/p58"
+        android:layout_marginTop="@dimen/p9"
+        android:text="@string/curtain"
+        android:textColor="@color/white"
+        android:textSize="@dimen/p20" />
+</RelativeLayout>

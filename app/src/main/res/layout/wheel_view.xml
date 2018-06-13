@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="60dp">
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#4CC9C3"-->
+    <!--android:layout_height="40dp">-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:text="类型选择"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignTop="@+id/tousu_confirm" />-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_toLeftOf="@+id/tousu_confirm"-->
+        <!--android:src="@drawable/tousu_cancel"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/tousu_confirm"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/tousu_confirm"/>-->
+<!--</RelativeLayout>-->
+    <ListView
+        android:id="@+id/wheel_view_wv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+
+</LinearLayout>

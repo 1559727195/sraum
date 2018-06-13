@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.Util.view.RoundProgressBar
+        android:id="@+id/roundProgressBar2"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+         android:layout_centerInParent="true"
+        app:roundColor="#ADE2CE"
+        app:roundProgressColor="#39B77A"
+        app:textColor="@color/smssdk_gray"
+        app:textIsDisplayable="true"
+        app:roundWidth="1dip"
+        app:roundWidth_inner = "8dp"
+        app:textSize="18sp"/>
+</RelativeLayout>

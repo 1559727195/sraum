@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于第一个fragment布局添加-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF2"
+    android:orientation="vertical">
+
+    <com.yanzhenjie.statusview.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fitsView="@+id/root_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/project_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择设备类型"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/manager_room_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="管理"
+            android:textSize="14sp"
+
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/list_forscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/p17"
+                android:layout_marginTop="8dp"
+                android:text="Zigbee设备"
+                android:textColor="@color/black"
+                android:textSize="@dimen/p20" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.andview.refreshview.XRefreshView
+                    android:id="@+id/refresh_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p17"
+                    android:layout_marginRight="@dimen/p17"
+                    android:background="#EFEFF2">
+
+                    <com.Util.ListViewForScrollView
+                        android:id="@+id/macfragritview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:horizontalSpacing="@dimen/p18"
+                        android:listSelector="@null"
+                        android:numColumns="4"
+                        android:verticalSpacing="@dimen/p14" />
+                </com.andview.refreshview.XRefreshView>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:layout_marginLeft="@dimen/p17"
+                android:layout_marginRight="@dimen/p17"
+                android:background="@drawable/bg_dash_line"
+                android:layerType="software" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/p17"
+                android:layout_marginTop="15dp"
+                android:text="Wi-Fi设备"
+                android:textColor="@color/black"
+                android:textSize="@dimen/p20" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.Util.ListViewForScrollView
+                    android:id="@+id/mac_wifi_dev_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p17"
+                    android:layout_marginRight="@dimen/p17"
+                    android:horizontalSpacing="@dimen/p18"
+                    android:listSelector="@null"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/p14" />
+
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

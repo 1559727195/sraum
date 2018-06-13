@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于主界面弹出popwindow设置-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/p1"
+        android:background="@drawable/addbghalf">
+
+        <RelativeLayout
+            android:id="@+id/addmac_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p70"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addscene_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p70"
+            android:layout_below="@+id/addmac_id"
+            android:layout_marginTop="@dimen/p15"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addroom_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p70"
+            android:layout_below="@+id/addscene_id"
+            android:layout_marginTop="@dimen/p15"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/select_dev_type_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p70"
+            android:layout_below="@+id/addroom_id"
+            android:layout_marginTop="@dimen/p15"></RelativeLayout>
+
+        <ImageView
+            android:id="@+id/light_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p36"
+            android:layout_marginTop="@dimen/p24"
+            android:background="@drawable/homeaddlamp" />
+
+        <TextView
+            android:id="@+id/lighttext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p30"
+            android:layout_marginTop="@dimen/p30"
+            android:layout_toRightOf="@+id/light_id"
+            android:text="@string/daddmac"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p24" />
+
+        <ImageView
+            android:id="@+id/scene_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/light_id"
+            android:layout_marginLeft="@dimen/p33"
+            android:layout_marginTop="@dimen/p39"
+            android:background="@drawable/homeaddcup" />
+
+        <TextView
+            android:id="@+id/scenetext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lighttext_id"
+            android:layout_marginLeft="@dimen/p26"
+            android:layout_marginTop="@dimen/p56"
+            android:layout_toRightOf="@+id/light_id"
+            android:text="@string/daddscene"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p24" />
+
+        <ImageView
+            android:id="@+id/room_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scene_id"
+            android:layout_marginLeft="@dimen/p32"
+            android:layout_marginTop="@dimen/p50"
+            android:background="@drawable/homeaddroom" />
+
+        <TextView
+            android:id="@+id/roomtext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scenetext_id"
+            android:layout_marginLeft="@dimen/p25"
+            android:layout_marginTop="@dimen/p56"
+            android:layout_toRightOf="@+id/room_id"
+            android:text="@string/daddroom"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p24" />
+
+
+        <ImageView
+            android:id="@+id/select_dev_type_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_id"
+            android:layout_marginLeft="@dimen/p32"
+            android:layout_marginTop="@dimen/p50"
+            android:layout_marginBottom="@dimen/p20"
+            android:background="@drawable/edit_icon" />
+
+        <TextView
+            android:id="@+id/select_dev_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_id"
+            android:layout_marginLeft="@dimen/p25"
+            android:layout_marginTop="@dimen/p56"
+            android:layout_toRightOf="@+id/select_dev_type_img"
+            android:text="选择设备类型"
+            android:textColor="@color/e30"
+            android:layout_marginBottom="@dimen/p20"
+            android:textSize="@dimen/p24" />
+
+    </RelativeLayout>
+</RelativeLayout>

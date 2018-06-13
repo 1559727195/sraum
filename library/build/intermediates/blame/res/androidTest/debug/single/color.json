@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "D:\\sraum\\sraum\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\zhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c48a577922b8c57e1a15e62e90ef7932\\res\\color\\abc_primary_text_material_light.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/white"
+        android:endColor="@color/white"
+        android:angle="90" />
+    <!--gradient定义该形状里面为渐变色填充，startColor起始颜色，endColor结束颜色，
+    gradient定義該形狀裡面為漸變填充，startColor其實顏色，endColor結束顏色
+    当angle=0时，渐变色是从左向右。 然后逆时针方向转，当angle=90时为从下往上。-->
+</shape>

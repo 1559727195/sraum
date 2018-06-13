@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e"
+    android:orientation="vertical">
+
+    <include layout="@layout/backtitle" />
+
+    <ListView
+        android:id="@+id/panelistview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p450"
+        android:divider="#00000000"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/panelrela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/p50">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/relatedpanel_bg"></RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/panelinearone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p320"
+            android:layout_marginTop="@dimen/p155"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/ptlitoneone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlioneonebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelineartwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p275"
+            android:layout_marginTop="@dimen/p155"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/ptlittwoone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlitwoonebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ptlittwotwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlitwotwobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelinearthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p200"
+            android:layout_marginTop="@dimen/p155"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/ptlitone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlionebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ptlittwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlitwobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ptlitthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/ptlithreebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelinearfour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p150"
+            android:layout_marginTop="@dimen/p155"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/paonerela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/paonebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/patworela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/patwobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pathreerela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/pathreebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pafourrela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/pafourbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/paneThreeLuTiaoGuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p150"
+            android:layout_marginTop="@dimen/p155"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/paonerela_sanlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <ImageView
+                    android:id="@+id/paonebtn_sanlu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/light_turn_on" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/patworela_sanlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <ImageView
+                    android:id="@+id/patwobtn_sanlu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/light_turn_on" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pathreerela_sanlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <ImageView
+                    android:id="@+id/pathreebtn_sanlu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/light_turn_on" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pafourrela_sanlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_weight="1"
+                android:background="@drawable/relatedpanel_whitebtn">
+
+                <Button
+                    android:id="@+id/pafourbtn_sanlu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p150"
+        android:layout_marginTop="@dimen/p345"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/pafiverela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/relatedpanel_blue"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/pafivebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/pafivetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p28"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pasixrela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p40"
+            android:layout_weight="1"
+            android:background="@drawable/relatedpanel_blue"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/pasixbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/pasixtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p28"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pasevenrela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p40"
+            android:layout_weight="1"
+            android:background="@drawable/relatedpanel_blue"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/pasevenbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/paseventext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p28"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/paeightrela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p40"
+            android:layout_weight="1"
+            android:background="@drawable/relatedpanel_blue"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/paeightbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/paeighttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p28"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

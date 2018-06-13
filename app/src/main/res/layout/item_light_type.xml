@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/macdethreetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdetwotext"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p40"
+        android:text="@string/macdethree"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdethreetexttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdetwotext"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p40"
+        android:layout_toRightOf="@+id/macdethreetext"
+        android:text="灯"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdeseventext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdethreetexttwo"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p40"
+        android:text="@string/macdeseven"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/editextone"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/macdethreetexttwo"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p11"
+        android:layout_toRightOf="@+id/macdeseventext"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p26" />
+</RelativeLayout>

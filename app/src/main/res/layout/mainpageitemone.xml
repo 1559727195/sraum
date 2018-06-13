@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/clore3e">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/backtitle" />
+
+    <RelativeLayout
+        android:id="@+id/noairconditioned_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/p90">
+
+        <RelativeLayout
+            android:id="@+id/hbigcirclerelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p190"
+            android:background="@drawable/hbig_circle">
+
+            <TextView
+                android:id="@+id/tempimage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p60" />
+
+            <ImageView
+                android:id="@+id/tempmark_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p4"
+                android:layout_marginTop="@dimen/p82"
+                android:layout_toRightOf="@+id/tempimage_id"
+                android:background="@drawable/htemper" />
+
+            <TextView
+                android:id="@+id/tempstate_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempimage_id"
+                android:layout_marginLeft="@dimen/p15"
+                android:layout_marginTop="@dimen/p100"
+                android:layout_toRightOf="@+id/windspeed_id"
+                android:text="制冷"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p26" />
+
+            <TextView
+                android:id="@+id/windspeed_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempimage_id"
+                android:layout_marginLeft="@dimen/p60"
+                android:layout_marginTop="@dimen/p100"
+                android:text="低风"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p26" />
+
+            <TextView
+                android:id="@+id/windspeedtwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempimage_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/p100"
+                android:text="低风"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p26"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/id_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progressDrawable="@drawable/bg_seekbar"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/windspeedrelative"
+            android:thumb="@drawable/hslide_circle" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/open_tiaoguangdeng"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_below="@+id/id_seekBar"
+            android:layout_marginTop="50dp"
+            >
+            <ImageView
+                android:id="@+id/openbtn_tiao_guang"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/open_black_word"
+                />
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/open_kong_tiao"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/id_seekBar"
+            android:layout_marginTop="50dp"
+            >
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/rel_1_pao"
+                app:layout_widthPercent="33%">
+                <ImageView
+                    android:id="@+id/openbtn_kong_tiao"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:src="@drawable/open_black_word"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_2_pao"
+                app:layout_widthPercent="33%"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/rel_1_pao"
+                android:layout_toEndOf="@+id/rel_1_pao">
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/close_btn_lignt_kong_tiao"
+                    android:src="@drawable/guan_black_word"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rel_2_pao"
+                android:id="@+id/rel_3_pao"
+                app:layout_widthPercent="33%">
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/change_btn_kong_tiao"
+                    android:src="@drawable/change_black_word"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/open_xin_feng"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp">
+
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:id="@+id/rel_1_xin"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_widthPercent="25%">
+                <ImageView
+                    android:id="@+id/openbtn_xin_feng"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/open_black_word"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:id="@+id/rel_2_xin"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rel_1_xin"
+                app:layout_widthPercent="25%">
+
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/close_btn_lignt_xin_feng"
+                    android:src="@drawable/guan_black_word"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout   android:layout_width="wrap_content"
+                android:id="@+id/rel_3_xin"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rel_2_xin"
+                app:layout_widthPercent="25%">
+
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/change_btn_xin_feng"
+                    android:src="@drawable/change_black_word"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/windspeedrelative_xin_feng"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:background="@drawable/hsmall_circle"
+                android:layout_toRightOf="@+id/rel_3_xin"
+                app:layout_widthPercent="19.5%"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hwind_speed" />
+            </RelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/windspeedrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hsmall_circle"
+            android:layout_below="@+id/hbigcirclerelative"
+            android:layout_toLeftOf="@+id/hbigcirclerelative"
+            android:layout_toStartOf="@+id/hbigcirclerelative">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hwind_speed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/patternrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hsmall_circle"
+            android:layout_below="@+id/hbigcirclerelative"
+            android:layout_toRightOf="@+id/hbigcirclerelative"
+            android:layout_toEndOf="@+id/hbigcirclerelative">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hmode_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dimmerrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hsmall_black"
+            android:layout_below="@+id/id_seekBar"
+            android:layout_alignLeft="@+id/windspeedrelative"
+            android:layout_alignStart="@+id/windspeedrelative"
+            android:visibility="gone"
+            android:layout_marginTop="19dp">
+
+            <ImageView
+                android:id="@+id/dimmerimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hairclose_word" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/switchrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/hsmall_black"
+            android:layout_alignTop="@+id/dimmerrelative"
+            android:layout_alignRight="@+id/id_seekBar"
+            android:layout_alignEnd="@+id/id_seekBar"
+            android:visibility="gone"
+            android:layout_marginEnd="12dp">
+
+            <ImageView
+                android:id="@+id/statusopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hairclose_word" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+       <RelativeLayout   android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:id="@+id/rel_1"
+           app:layout_widthPercent="33%">
+           <ImageView
+               android:id="@+id/openbtn"
+               android:layout_width="81dp"
+               android:layout_centerInParent="true"
+               android:src="@drawable/open_black_word"
+               android:layout_height="81dp" />
+       </RelativeLayout>
+
+
+        <RelativeLayout   android:layout_width="wrap_content"
+            android:id="@+id/rel_2"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rel_1"
+            app:layout_widthPercent="33%">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:id="@+id/close_btn_lignt"
+                android:src="@drawable/guan_black_word"
+                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+        <RelativeLayout   android:layout_width="wrap_content"
+            android:id="@+id/rel_3"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rel_2"
+            app:layout_widthPercent="33%">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:id="@+id/change_btn"
+                android:src="@drawable/change_black_word"
+                android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mainairrea_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cuereaone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p29"
+            android:layout_marginTop="@dimen/p112"
+            android:background="@drawable/hairbg">
+
+            <RelativeLayout
+                android:id="@+id/curopenrelative_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p98"
+                android:layout_marginTop="@dimen/p148"
+                android:background="@drawable/hsmall_black">
+
+                <ImageView
+                    android:id="@+id/curimage_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairopen_word_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/curoffrelative_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p203"
+                android:layout_marginTop="@dimen/p148"
+                android:layout_toRightOf="@+id/curopenrelative_id"
+                android:background="@drawable/hairopen">
+
+                <ImageView
+                    android:id="@+id/curoffima_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairclose_word_black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p27"
+            android:layout_marginTop="@dimen/p110"
+            android:background="@drawable/hairtitle">
+
+            <View
+                android:id="@+id/linewhier"
+                android:layout_width="@dimen/p170"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p48"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/curditextone_id"
+                android:layout_width="@dimen/p170"
+                android:layout_height="@dimen/p30"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p20"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p8"
+                android:layout_marginTop="@dimen/p32"
+                android:layout_toRightOf="@+id/linewhier"
+                android:background="@drawable/hair" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cuereatwo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cuereaone_id"
+            android:layout_marginLeft="@dimen/p29"
+            android:background="@drawable/hairbg">
+
+            <RelativeLayout
+                android:id="@+id/curopenrelativetwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p98"
+                android:layout_marginTop="@dimen/p148"
+                android:background="@drawable/hsmall_black">
+
+                <ImageView
+                    android:id="@+id/curimagetwo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairopen_word_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/curoffrelativetwo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p203"
+                android:layout_marginTop="@dimen/p148"
+                android:layout_toRightOf="@+id/curopenrelativetwo_id"
+                android:background="@drawable/hairopen">
+
+                <ImageView
+                    android:id="@+id/curoffimatwo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairclose_word_black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cuereaone_id"
+            android:layout_marginLeft="@dimen/p27"
+            android:background="@drawable/hairtitle">
+
+            <View
+                android:id="@+id/linewhiertwo"
+                android:layout_width="@dimen/p170"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p48"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/curditextonetwo_id"
+                android:layout_width="@dimen/p170"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p20"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p8"
+                android:layout_marginTop="@dimen/p32"
+                android:layout_toRightOf="@+id/linewhiertwo"
+                android:background="@drawable/hair" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cuereathree_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cuereatwo_id"
+            android:layout_marginLeft="@dimen/p29"
+            android:background="@drawable/hairbg">
+
+            <RelativeLayout
+                android:id="@+id/curopenrelativethree_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p98"
+                android:layout_marginTop="@dimen/p148"
+                android:background="@drawable/hsmall_black">
+
+                <ImageView
+                    android:id="@+id/curimagethree_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairopen_word_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sucrela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p35"
+                android:layout_marginTop="@dimen/p148"
+                android:layout_toRightOf="@+id/curopenrelativethree_id"
+                android:background="@drawable/hairopen">
+
+                <ImageView
+                    android:id="@+id/sucrelaimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairpause_word" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/curoffrelativethree_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p203"
+                android:layout_marginTop="@dimen/p148"
+                android:layout_toRightOf="@+id/curopenrelativethree_id"
+                android:background="@drawable/hairopen">
+
+                <ImageView
+                    android:id="@+id/curoffimathree_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hairclose_word_black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cuereatwo_id"
+            android:layout_marginLeft="@dimen/p27"
+            android:background="@drawable/hairtitle">
+
+            <View
+                android:id="@+id/linewhierthree"
+                android:layout_width="@dimen/p170"
+                android:layout_height="@dimen/d1"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p48"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/curditextthree_id"
+                android:layout_width="@dimen/p170"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p31"
+                android:layout_marginTop="@dimen/p20"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/p30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p8"
+                android:layout_marginTop="@dimen/p32"
+                android:layout_toRightOf="@+id/linewhierthree"
+                android:background="@drawable/hair" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

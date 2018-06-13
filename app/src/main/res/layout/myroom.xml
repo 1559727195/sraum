@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/maintitledialog"
+        layout="@layout/maintitledialog" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/rimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/backtwo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rimageview"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fresh" />
+
+        <TextView
+            android:id="@+id/rtext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d80"
+            android:text="@string/bedroom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s30" />
+
+        <ImageView
+            android:id="@+id/rimage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rtext_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d20"
+            android:src="@drawable/v_smallline" />
+
+        <ImageView
+            android:id="@+id/rimagetwo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rimage_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d20"
+            android:src="@drawable/bed" />
+
+        <ImageView
+            android:id="@+id/rimagethree_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rimagetwo_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d20"
+            android:src="@drawable/v_smallline" />
+
+        <com.Util.HorizontalListView
+            android:id="@+id/horizon_listview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d100"
+            android:layout_below="@+id/rimagethree_id"
+            android:layout_marginLeft="160dp"></com.Util.HorizontalListView>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rimagethree_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p100"
+            android:src="@drawable/v_longline" />
+
+        <TextView
+            android:id="@+id/rtextnum_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d10"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s40" />
+
+        <com.Util.HorizontalListView
+            android:id="@+id/horizon_listviewtwo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rtextnum_id"
+            android:layout_marginTop="@dimen/d20"></com.Util.HorizontalListView>
+
+        <ImageView
+            android:id="@+id/addcircle_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d20"
+            android:background="@drawable/addcircle" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="敬请期待"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26" />
+
+</RelativeLayout>

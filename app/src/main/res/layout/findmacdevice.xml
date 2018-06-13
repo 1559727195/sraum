@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/clore3e">
+
+    <include
+        android:id="@+id/backtitle_id"
+        layout="@layout/backtitle" />
+
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/addmacimageview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/addmac" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:id="@+id/sraum_rela_act"
+            android:visibility="gone"
+            android:layout_below="@+id/backtitle_id"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/sraum_image_select"
+                android:src="@drawable/sraum_setbox"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sraum_image_select"
+                android:textColor="#000000"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/sraum_txt"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:text="快速连续按A键三次，在快速连续按B键三次，直到蓝灯连续闪烁3次"/>
+
+            <com.Util.view.RoundProgressBar
+                android:id="@+id/roundProgressBar2"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_centerInParent="true"
+                app:roundColor="#ADE2CE"
+                android:layout_below="@+id/sraum_txt"
+                app:roundProgressColor="#39B77A"
+                app:textColor="@color/smssdk_gray"
+                app:textIsDisplayable="true"
+                app:roundWidth="1dip"
+                android:layout_marginTop="15dp"
+                app:roundWidth_inner = "8dp"
+                app:textSize="15sp"/>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    app:layout_widthPercent="80%"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_cancel_wangguan"
+                    android:height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dialog_sraum_select"
+                    android:text="取消"/>
+            </android.support.percent.PercentRelativeLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addroomrelative_id"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle_id">
+
+        <TextView
+            android:id="@+id/roomname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="敬请期待"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/s15" />
+    </RelativeLayout>
+</RelativeLayout>

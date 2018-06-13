@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用于添加温度或者调光界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ede">
+    <RelativeLayout
+        android:id="@+id/addrela_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p100"
+        android:layout_marginLeft="@dimen/p271"
+        android:layout_marginTop="@dimen/p285"></RelativeLayout>
+    <ImageView
+        android:id="@+id/upimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uph"
+        android:layout_marginLeft="@dimen/p345"
+        android:layout_marginTop="@dimen/p322"/>
+    <RelativeLayout
+        android:id="@+id/reduce_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p476"
+        android:layout_marginLeft="@dimen/p271"></RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downh"
+        android:layout_marginLeft="@dimen/p345"
+        android:layout_marginBottom="@dimen/p513"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/temptext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num"
+        android:textSize="@dimen/p90"
+        android:layout_marginLeft="@dimen/p313"
+        android:textColor="@color/e30"
+        android:layout_marginTop="@dimen/p87"
+        android:layout_below="@+id/upimage_id"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp"
+        android:layout_marginRight="@dimen/p17"
+        android:layout_marginBottom="@dimen/p24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/p20"
+        android:textColor="@color/e30"/>
+
+</RelativeLayout>

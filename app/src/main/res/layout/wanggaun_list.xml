@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/backtitle" />
+    <ListView
+        android:id="@+id/list_show_rev_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchrela_id"
+        android:cacheColorHint="#00000000"
+        android:divider="#E3E3E3"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="15dp"></ListView>
+</LinearLayout>

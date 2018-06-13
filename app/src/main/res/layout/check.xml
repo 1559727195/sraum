@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于检测密码dialog展示的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dtext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/belowtext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtext_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="两次密码输入不一致"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/dtext_id"
+        android:layout_marginTop="65px"
+        android:background="#E0E0E0" />
+
+    <Button
+        android:id="@+id/checksec_id"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:text="确定退出"
+        android:textColor="#2894FF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/checklinear_id"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_below="@+id/line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qxbutton_id"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="#2894FF" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#E0E0E0" />
+
+        <Button
+            android:id="@+id/checkbutton_id"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="确定"
+            android:textColor="#2894FF" />
+    </LinearLayout>
+
+</RelativeLayout>

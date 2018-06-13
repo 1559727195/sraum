@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/itemrela_id"
+        android:layout_width="@dimen/p153"
+        android:layout_height="@dimen/p153"
+        android:background="@drawable/markh">
+
+        <ImageView
+            android:id="@+id/imageitem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p34"
+            android:background="@drawable/sce" />
+
+        <TextView
+            android:id="@+id/textitem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/p20"
+            android:text="@string/porchlight"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/p153"
+        android:layout_height="@dimen/p153"
+        android:background="@drawable/markh">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/p20"
+            android:background="@drawable/sv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/p20"
+            android:text="@string/porchlight"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+    </RelativeLayout>
+</LinearLayout>

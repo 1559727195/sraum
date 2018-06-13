@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#EBE9D7"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/et_prot"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:hint="请输入端口号"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <EditText
+                android:id="@+id/et_num"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/et_prot"
+                android:hint="请输入波特率"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <EditText
+                android:id="@+id/et_send"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/et_num"
+                android:hint="请输入发送数据"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <EditText
+                android:id="@+id/et_send_value"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/et_send"
+                android:hint="请输入权值(Hex)"
+                android:textColorHint="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_set"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="设置"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:text="打开"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_open"
+                android:text="发送"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/add_dev"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_send"
+                android:text="设备添加网关"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_receive"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:text="关闭"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_receive"
+                android:text="清空"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/device_write"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_clear"
+                android:text="[0xD6=网关写入ZigBee模块的信息]"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_widthPercent="20%"></Button>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_reset_zigbee"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:text="[0xD9=网关复位ZigBee模块] "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_reset_zigbee"
+                android:text="测试网关发送设备信息A802"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_widthPercent="20%" />
+
+
+            <Button
+                android:id="@+id/accend_normal_model"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_test"
+                android:text="进入工作模式"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <TextView
+                android:id="@+id/show_active"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/accend_normal_model"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+            <Button
+                android:id="@+id/wang_guan_send_cmd"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/show_active"
+                android:text="A806=网关主动向设备发送控制命令"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="20%" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"></ListView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_show_wangguan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提示:网关上电后，如果已经设置过设备加网关后，可以直接进入设备工作模式"
+                android:textSize="28sp" />
+        </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="UDP 服务器端"
+            android:textColor="#0071C8"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/label_udp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:text="UDP服务器端" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="TCP 服务器端"
+            android:textColor="#0071C8"
+            android:textSize="28sp" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/debug_shape">
+
+            <EditText
+                android:id="@+id/com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:height="40dp"
+                android:background="@null"
+                android:hint="请输入端口号"
+                android:text="8080"
+                android:textSize="18sp"
+                app:layout_widthPercent="40%" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_below="@+id/com"
+                android:layout_marginLeft="40dp"
+                android:background="@color/gray"
+                app:layout_widthPercent="40%"></View>
+
+            <TextView
+                android:id="@+id/txt_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/com"
+                android:text="CPU使用率:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cpu_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/txt_cpu"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="监听"
+                android:textSize="18sp" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="显示信息"
+            android:textColor="#0071C8"
+            android:textSize="18sp" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/debug_shape">
+
+            <TextView
+                android:id="@+id/client_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="客户端名称"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:id="@+id/client_rev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/client_name"
+                android:gravity="center"
+                android:text="接收客户端的消息"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:id="@+id/client_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/client_rev"
+                android:gravity="center"
+                android:text="发送客户端的消息"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_widthPercent="33%" />
+
+            <View
+                android:id="@+id/view_bellow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/client_rev"
+                android:background="#000000"></View>
+
+            <ListView
+                android:id="@+id/list_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_bellow"
+                android:layout_marginLeft="10dp">
+
+            </ListView>
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="服务端发送信息"
+            android:textColor="#0071C8"
+            android:textSize="18sp" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/debug_shape">
+
+            <EditText
+                android:id="@+id/send_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:height="40dp"
+                android:background="@null"
+                android:hint="请输入要发送的内容"
+                android:textSize="18sp"
+                app:layout_widthPercent="40%" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_below="@+id/send_content"
+                android:layout_marginLeft="40dp"
+                android:background="@color/gray"
+                app:layout_widthPercent="40%"></View>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="发送"
+                android:textSize="18sp" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="TCP 客户端"
+            android:textColor="#0071C8"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:height="60dp"
+                android:hint="发送的内容" />
+
+            <Button
+                android:id="@+id/click_send"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="25dp"
+                android:text="发送"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_show"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:hint="显示的内容" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

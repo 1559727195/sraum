@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于登录界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eb"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.Util.OnTouchScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="870px"
+                android:layout_marginTop="360px"
+                android:background="@drawable/bg"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p91"
+                android:layout_marginTop="@dimen/p159"
+                android:src="@drawable/textone" />
+
+            <ImageView
+                android:id="@+id/uimage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p111"
+                android:layout_marginTop="@dimen/p570"
+                android:background="@drawable/user1" />
+
+            <com.Util.ClearEditText
+                android:id="@+id/usertext_id"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="@dimen/p58"
+                android:layout_marginRight="@dimen/p200"
+                android:layout_marginTop="540px"
+                android:layout_toRightOf="@+id/uimage_id"
+                android:background="@null"
+                android:hint="@string/user"
+                android:singleLine="true"
+                android:textColor="@color/c6f"
+                android:textSize="@dimen/p24" />
+
+            <View
+                android:id="@+id/line_id"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/uimage_id"
+                android:layout_marginLeft="@dimen/p86"
+                android:layout_marginRight="@dimen/p86"
+                android:layout_marginTop="@dimen/p17"
+                android:background="@color/ea" />
+
+            <ImageView
+                android:id="@+id/sraum_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p271"
+                android:layout_marginTop="@dimen/p327"
+                android:background="@drawable/saraum05"></ImageView>
+
+            <ImageView
+                android:id="@+id/passimage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_id"
+                android:layout_marginLeft="@dimen/p115"
+                android:layout_marginTop="@dimen/p81"
+                android:background="@drawable/lockone" />
+
+            <com.Util.ClearEditText
+                android:id="@+id/phonepassword"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/line_id"
+                android:layout_marginLeft="@dimen/p59"
+                android:layout_marginRight="@dimen/p200"
+                android:layout_marginTop="55px"
+                android:layout_toRightOf="@+id/passimage_id"
+                android:background="@null"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/c6f"
+                android:textSize="@dimen/p24" />
+
+            <ImageView
+                android:id="@+id/eyeimageview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/line_id"
+                android:layout_marginRight="@dimen/p100"
+                android:layout_marginTop="@dimen/p80"
+                android:src="@drawable/eyeclose" />
+
+            <View
+                android:id="@+id/linetwo"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/passimage_id"
+                android:layout_marginLeft="@dimen/p86"
+                android:layout_marginRight="@dimen/p86"
+                android:layout_marginTop="@dimen/p17"
+                android:background="@color/ea" />
+
+            <RelativeLayout
+                android:id="@+id/forgetrelative_id"
+                android:layout_width="200px"
+                android:layout_height="@dimen/p85"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linetwo"
+                android:layout_marginTop="20px"
+                android:background="@drawable/btnclick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget"
+                    android:textColor="@color/c6f"
+                    android:textSize="@dimen/p22" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/enter_id"
+                android:layout_width="@dimen/p255"
+                android:layout_height="@dimen/p62"
+                android:layout_below="@+id/forgetrelative_id"
+                android:layout_marginLeft="@dimen/p86"
+                android:layout_marginTop="@dimen/p50"
+                android:background="@drawable/regisclick"
+                android:text="@string/register"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p24" />
+
+            <Button
+                android:id="@+id/register_id"
+                android:layout_width="@dimen/p255"
+                android:layout_height="@dimen/p62"
+                android:layout_below="@+id/forgetrelative_id"
+                android:layout_marginLeft="@dimen/p40"
+                android:layout_marginTop="@dimen/p50"
+                android:layout_toRightOf="@+id/enter_id"
+                android:background="@drawable/enterclick"
+                android:text="@string/enter"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_id"
+                android:layout_marginLeft="202px"
+                android:layout_marginTop="@dimen/p150"
+                android:text="@string/bottom"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p20" />
+        </RelativeLayout>
+    </com.Util.OnTouchScrollView>
+
+</RelativeLayout>

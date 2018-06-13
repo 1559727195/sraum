@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <include
+        android:id="@+id/backrela_id"
+        layout="@layout/backtitle" />
+
+    <ListView
+        android:id="@+id/editorlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backrela_id"></ListView>
+
+    <Button
+        android:id="@+id/editorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/p240"
+        android:background="@drawable/hsmall_circle"
+        android:text="@string/save"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+</RelativeLayout>

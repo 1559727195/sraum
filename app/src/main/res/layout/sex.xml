@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <include layout="@layout/backtitle" />
+
+    <RelativeLayout
+        android:id="@+id/newnamerela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p240">
+
+        <com.Util.ClearEditText
+            android:id="@+id/scenewname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/typein"
+            android:paddingLeft="@dimen/p5"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p28" />
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scenewname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p80"
+            android:background="@drawable/hairclose"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/p28" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sexlinera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/man_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/sexwhitecircle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sexman" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/man_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/sexwordman" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/woman_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/sexblackcircle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sexwoman" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/woman_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/sexwordwoman" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

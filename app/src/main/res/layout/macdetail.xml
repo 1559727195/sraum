@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/backtitle" />
+
+    <TextView
+        android:id="@+id/macdeonetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p297"
+        android:layout_marginTop="@dimen/p155"
+        android:text="@string/macdeone"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdetwotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdeonetext"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p82"
+        android:text="面板名字"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdetwotexttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdeonetext"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p82"
+        android:layout_toRightOf="@+id/macdetwotext"
+        android:text="5454877"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdethreetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdetwotext"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p40"
+        android:text="@string/macdethree"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdethreetexttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdetwotext"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p40"
+        android:layout_toRightOf="@+id/macdethreetext"
+        android:text="灯"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdeseventext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macdethreetexttwo"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p40"
+        android:text="@string/macdeseven"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/editextone"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/macdethreetexttwo"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p11"
+        android:layout_toRightOf="@+id/macdeseventext"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p26" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/other_device_all_rel"
+        android:layout_below="@+id/macdeseventext"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/status_rel"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p41"
+                android:layout_marginTop="@dimen/p40"
+                android:id="@+id/device_status"
+                android:text="status"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+
+            <TextView
+                android:id="@+id/device_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/device_status"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p271"
+                android:layout_marginTop="@dimen/p40"
+                android:text="灯"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/dimmer_rel"
+            android:layout_below="@+id/status_rel"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p41"
+                android:layout_marginTop="@dimen/p40"
+                android:text="dimmer"
+                android:id="@+id/device_dimmer"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+
+            <TextView
+                android:id="@+id/device_dimmer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/device_dimmer"
+                android:layout_marginLeft="@dimen/p250"
+                android:layout_marginTop="@dimen/p40"
+                android:text="灯"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mode_rel"
+            android:layout_below="@+id/dimmer_rel"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/p41"
+                android:layout_marginTop="@dimen/p40"
+                android:id="@+id/device_mode"
+                android:text="mode"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+
+            <TextView
+                android:id="@+id/device_mode_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/device_mode"
+                android:layout_marginLeft="@dimen/p271"
+                android:layout_marginTop="@dimen/p40"
+                android:text="灯"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p26" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/macdetentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editextone"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p35"
+        android:text="@string/macdeten"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/macdeleventext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editextone"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p35"
+        android:layout_toRightOf="@+id/macdeseventext"
+        android:text="@string/macdeleven"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/editexthree"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/macdetentext"
+        android:layout_marginLeft="@dimen/p41"
+        android:layout_marginTop="@dimen/p11"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p26" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/editextfour"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/macdetentext"
+        android:layout_marginLeft="@dimen/p243"
+        android:layout_marginTop="@dimen/p11"
+        android:layout_toRightOf="@+id/macdeseventext"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p26" />
+
+    <Button
+        android:id="@+id/macdbtton_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/p240"
+        android:background="@drawable/macdecircle" />
+
+</RelativeLayout>

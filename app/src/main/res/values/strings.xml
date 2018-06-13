@@ -1,0 +1,430 @@
+<resources>
+    <string name="app_name">sraum</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <!--登录界面字体-->
+    <string name="sraum">sraum</string>
+    <string name="user">手机号/用户名</string>
+    <string name="password">密码</string>
+    <string name="forget">忘记密码</string>
+    <string name="register">登录</string>
+    <string name="enter">注册</string>
+    <string name="bottom">Copyright © 苏州众天力信息科技有限公司</string>
+    <!--注册界面字体-->
+    <string name="famname">输入家人称呼</string>
+    <string name="famphone">输入家人手机号</string>
+    <string name="phone">输入手机号</string>
+    <string name="checkcode">输入验证码</string>
+    <string name="passord">输入密码</string>
+    <string name="confirm">再次输入密码</string>
+    <string name="read">我已阅读并同意</string>
+    <string name="readafter">《sraum注册协议》</string>
+    <string name="complete">完成注册</string>
+    <string name="getcode">获取验证码</string>
+    <!--主界面字体-->
+    <string name="mac">智能设备</string>
+    <string name="room">房间</string>
+    <string name="scene">场景</string>
+    <!--第一个fragment所用字体-->
+    <string name="nomac">暂无智能设备</string>
+    <string name="noroom">暂无房间</string>
+    <string name="noscene">暂无场景</string>
+    <string name="add">我要添加</string>
+    <string name="light">灯光</string>
+    <string name="air">空调</string>
+    <string name="curtain">窗帘</string>
+    <!--侧滑页面字体-->
+    <string name="one">首页</string>
+    <string name="two">我的网关</string>
+    <string name="three">智能设备</string>
+    <string name="four">我的房间</string>
+    <string name="five">我的场景</string>
+    <string name="six">设置</string>
+    <string name="seven">关于</string>
+    <string name="eight">退出</string>
+    <!--gritview  item布局所需要字体-->
+    <string name="porchlight">走廊灯</string>
+    <string name="num">16</string>
+    <string name="temp">注：单位为摄氏度</string>
+    <!--dialog所需要字体-->
+    <string name="daddmac">添加智能设备</string>
+    <string name="daddscene">添加场景</string>
+    <string name="daddroom">添加房间</string>
+    <!--选择网关所需字体-->
+    <string name="mygate">我的网关</string>
+    <string name="ad">我要添加</string>
+    <!--搜索界面所需字体-->
+    <string name="gosearch">继续搜索</string>
+    <string name="details">查看详情</string>
+    <string name="stopsearch">停止搜索</string>
+    <string name="nosearch">未搜索到局域网</string>
+    <!--网关详情字体-->
+    <string name="gateone">您的局域网未发现Massky</string>
+    <string name="gatetwo">®</string>
+    <string name="gatethree">网关</string>
+    <string name="gatefour">您可以按以下方法来解决问题:</string>
+    <string name="gatefive">1.请检查网关设备是否通电;</string>
+    <string name="gatesix">2.网关设备与手机必须在同一个局域网</string>
+    <string name="gateseven">3.网关设备故障灯是否闪烁</string>
+    <string name="gateight">4.如未发现以上问题,请致电40012345678</string>
+    <!--网关信息-->
+    <string name="gatewone">网关详细信息</string>
+    <string name="gatewtwo">网关ID</string>
+    <string name="gatewthree">8928548789798</string>
+    <string name="gatewfour">型号</string>
+    <string name="gatewfive">w_06968</string>
+    <string name="gatewsix">固件版本</string>
+    <string name="gatewseven">V1.1.33</string>
+    <string name="gateweight">硬件版本</string>
+    <string name="gatewnine">V1.0</string>
+    <string name="gatewten">自定名称</string>
+    <!--我的场景页面-->
+    <string name="scenecen">我的场景</string>
+    <string name="sceneone">回家</string>
+    <string name="scenetwo">睡眠</string>
+    <string name="scenethree">夜起</string>
+    <string name="scenefour">离家</string>
+    <string name="scenefive">休息</string>
+    <string name="scenesix">学习</string>
+    <string name="sceneseven">影音</string>
+    <string name="sceneight">会客</string>
+    <string name="scenenine">用餐</string>
+    <string name="sceneten">运动</string>
+    <string name="sceneleven">晨起</string>
+    <string name="scenetwle">全开</string>
+    <string name="scenethirteen">全关</string>
+    <string name="function">功能选项</string>
+    <string name="rename">重命名</string>
+    <string name="editesce">编辑场景</string>
+    <string name="deletesce">删除场景</string>
+    <string name="associated">关联面板</string>
+    <!--我的房间所需字体-->
+    <string name="myroom">我的房间</string>
+    <string name="bedroom">卧室</string>
+    <string name="fresh">下拉刷新</string>
+    <string name="rone">卧室</string>
+    <string name="rtwo">厨房</string>
+    <string name="rthree">卫生间</string>
+    <string name="rfour">客厅</string>
+    <string name="rfive">餐厅</string>
+    <string name="rsix">阳台</string>
+    <string name="rseven">门厅</string>
+    <string name="reight">儿童房</string>
+    <string name="rnine">书房</string>
+    <string name="rten">车库</string>
+    <string name="relcven">化妆间</string>
+    <string name="rtwle">娱乐室</string>
+    <string name="rthirteen">健身区</string>
+    <string name="rmone">卧室调光灯</string>
+    <string name="rmtwo">客厅灯</string>
+    <string name="rmthree">卧室空调</string>
+    <string name="rmfour">卧室窗帘</string>
+    <string name="rmfive">卫浴灯</string>
+    <string name="rmsix">卫浴灯</string>
+    <string name="rmseven">客厅空调</string>
+    <string name="rmeight">厨房灯</string>
+    <string name="rmnine">客厅窗帘</string>
+
+    <!--用于二维码扫描-->
+    <string name="app_picker_name">Applications</string>
+    <string name="bookmark_picker_name">Bookmarks</string>
+    <string name="button_add_calendar">Add to calendar</string>
+    <string name="button_add_contact">Add contact</string>
+    <string name="button_book_search">Book Search</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_custom_product_search">Custom search</string>
+    <string name="button_dial">Dial number</string>
+    <string name="button_email">Send email</string>
+    <string name="button_get_directions">Get directions</string>
+    <string name="button_mms">Send MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Open browser</string>
+    <string name="button_product_search">Product search</string>
+    <string name="button_search_book_contents">Search contents</string>
+    <string name="button_share_app">Application</string>
+    <string name="button_share_bookmark">Bookmark</string>
+    <string name="button_share_by_email">Share via email</string>
+    <string name="button_share_by_sms">Share via SMS</string>
+    <string name="button_share_clipboard">Clipboard</string>
+    <string name="button_share_contact">Contact</string>
+    <string name="button_show_map">Show map</string>
+    <string name="button_sms">Send SMS</string>
+    <string name="button_web_search">Web search</string>
+    <string name="button_wifi">Connect to Network</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="history_clear_text">Clear history</string>
+    <string name="history_clear_one_history_text">Clear</string>
+    <string name="history_email_title">Barcode Scanner history</string>
+    <string name="history_empty">Empty</string>
+    <string name="history_empty_detail">No barcode scans have been recorded</string>
+    <string name="history_send">Send history</string>
+    <string name="history_title">History</string>
+    <string name="menu_encode_mecard">Use MECARD</string>
+    <string name="menu_encode_vcard">Use vCard</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_google_books">Google</string>
+    <string name="msg_google_product">Google</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+    <string name="msg_invalid_value">Invalid value</string>
+    <string name="msg_redirect">Redirect</string>
+    <string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+    <string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+    <string name="msg_sbc_no_page_returned">No page returned</string>
+    <string name="msg_sbc_page">Page</string>
+    <string name="msg_sbc_results">Results</string>
+    <string name="msg_sbc_searching_book">Searching book\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+    <string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+    <string name="msg_share_text">Or type some text and press Enter</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_auto_focus_title">Use auto focus</string>
+    <string name="preferences_auto_open_web_title">Open web pages automatically</string>
+    <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+    <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">Substitutions: %s = contents, %f = format, %t = type</string>
+    <string name="preferences_custom_product_search_title">Custom search URL</string>
+    <string name="preferences_decode_1D_industrial_title">1D Industrial</string>
+    <string name="preferences_decode_1D_product_title">1D Product</string>
+    <string name="preferences_decode_Aztec_title">Aztec</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_device_bug_workarounds_title">Device Bug Workarounds</string>
+    <string name="preferences_disable_barcode_scene_mode_title">No barcode scene mode</string>
+    <string name="preferences_disable_continuous_focus_summary">Use only standard focus mode</string>
+    <string name="preferences_disable_continuous_focus_title">No continuous focus</string>
+    <string name="preferences_disable_exposure_title">No exposure</string>
+    <string name="preferences_disable_metering_title">No metering</string>
+    <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+    <string name="preferences_front_light_title">Use front light</string>
+    <string name="preferences_front_light_auto">Automatic</string>
+    <string name="preferences_front_light_off">Off</string>
+    <string name="preferences_front_light_on">On</string>
+    <string name="preferences_general_title">General settings</string>
+    <string name="preferences_invert_scan_title">Invert scan</string>
+    <string name="preferences_invert_scan_summary">Scan for white barcodes on black background. Not available on some devices.</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_orientation_title">No automatic rotation</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_result_title">Result settings</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_search_country">Search country</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="result_address_book">Found contact info</string>
+    <string name="result_calendar">Found calendar event</string>
+    <string name="result_email_address">Found email address</string>
+    <string name="result_geo">Found geographic coordinates</string>
+    <string name="result_isbn">Found book</string>
+    <string name="result_product">Found product</string>
+    <string name="result_sms">Found SMS address</string>
+    <string name="result_tel">Found phone number</string>
+    <string name="result_text">Found plain text</string>
+    <string name="result_uri">Found URL</string>
+    <string name="result_wifi">Found WLAN Configuration</string>
+    <string name="sbc_name">Google Book Search</string>
+    <string name="wifi_changing_network">Requesting connection to network\u2026</string>
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <!--设置里面字体设置-->
+    <string name="set">设置</string>
+    <string name="accountnumber">账号管理</string>
+    <string name="shake">震动</string>
+    <string name="voice">声音</string>
+    <string name="gesturespassword">手势密码</string>
+    <string name="cache">缓存清理</string>
+    <string name="mb">0MB</string>
+    <string name="camera">相机</string>
+    <string name="photoalbum">从相册选取图片</string>
+    <string name="lagermap">查看大图</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <!--账号管理需要字体-->
+    <string name="aone">用户名</string>
+    <string name="atwo">昵称</string>
+    <string name="athree">性别</string>
+    <string name="afour">生日</string>
+    <string name="afive">手机号</string>
+    <string name="asix">修改密码</string>
+    <string name="aseven">我的家人(0)</string>
+    <string name="sex">男</string>
+    <string name="sexwoman">女</string>
+    <string name="birthday">1996-12-28</string>
+    <string name="phonenumber">11011011011</string>
+    <string name="logout">退出当前账号</string>
+    <!--我的家人所需要字体-->
+    <string name="myfamily">我的家人</string>
+    <string name="darling">亲爱的家人</string>
+    <!--手势密码-->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- Gesture code starting -->
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <!--关于界面需要字体-->
+    <string name="next">下一步</string>
+    <string name="aboutmain">关于</string>
+    <string name="about">sraum v1.5.4</string>
+    <string name="aboutone">产品介绍</string>
+    <string name="abouttwo">使用帮助</string>
+    <string name="aboutthree">意见反馈</string>
+    <string name="aboutfour">服务条款</string>
+    <string name="aboutfive">开发人员</string>
+    <string name="aboutsix">版本更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="soft_updating">正在更新</string>
+    <!--智能设备详细信息界面-->
+    <string name="macd">设备ID</string>
+    <string name="macdeone">设备详情信息</string>
+    <string name="macdetwo">网关ID</string>
+    <string name="macdethree">设备类型</string>
+    <string name="macdefour">型号</string>
+    <string name="macdefive">固件版本</string>
+    <string name="macdesix">硬件版本</string>
+    <string name="macdeseven">设备名称</string>
+    <string name="macdeeight">所属房间</string>
+    <string name="macdenine">找设备</string>
+    <string name="macdeten">一窗帘名称</string>
+    <string name="macdeleven">二窗帘名称</string>
+
+    <!--修改密码界面-->
+    <string name="changepassword">修改密码</string>
+    <string name="originalpassword">原密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="againpassword">再次输入密码</string>
+    <string name="completepass">完成</string>
+    <!--性别界面-->
+    <string name="gender">性别</string>
+    <!-- End -->
+    <string name="ges">手势密码</string>
+    <!--测试text-->
+    <string name="xuchao">许超</string>
+    <string name="birth">生日</string>
+    <string name="maircondition">主空调</string>
+    <!--首页item点击string-->
+    <string name="itemone">卧室调光灯</string>
+    <string name="itemtwo">客厅灯</string>
+    <string name="itemthree">卧室空调</string>
+    <string name="itemfour">卧室窗帘</string>
+    <string name="itemfive">卫浴灯</string>
+    <string name="itemsix">客厅空调</string>
+    <string name="itemseven">厨房灯</string>
+    <string name="itemeight">客厅窗帘</string>
+    <string name="itemnine">地暖</string>
+    <string name="itemten">新风</string>
+    <!--首页item点击房间string-->
+    <string name="roomone">卧室</string>
+    <string name="roomtwo">厨房</string>
+    <string name="roomthree">卫生间</string>
+    <string name="roomfour">客厅</string>
+    <string name="roomfive">餐厅</string>
+    <string name="roomsix">阳台</string>
+    <string name="roomseven">门厅</string>
+    <string name="roomeight">儿童房</string>
+    <string name="roomnine">书房</string>
+    <string name="roomten">车库</string>
+    <string name="roomeleven">化妆间</string>
+    <string name="roomtwelve">娱乐室</string>
+    <string name="roomthirteen">健身区</string>
+    <string name="addmac">添加设备</string>
+    <string name="addroom">添加房间</string>
+    <string name="roomname">房间名</string>
+    <string name="findname">找回密码</string>
+    <!--网关详细信息-->
+    <string name="gatedeta">添加网关</string>
+    <string name="gatedone">网关ID</string>
+    <string name="gatedtwo">自定义名称</string>
+    <string name="gatedthree">网关密码</string>
+    <string name="developstr">
+                *Design*\n\nStanley\n\nChangJasmine Chou\n\n\n*IOS Development*
+\nYang Li\n\n
+\n*Android Development*
+\nFuchao Xu\n\n
+\n*API*
+\nRed Zhu\n\n
+\n*Test*
+\nBlack Yin
+\nStanley Chang
+\nJerkoh Gu\n\n
+\n*Special Thanks*
+\nAll employees of Massky
+</string>
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="addpanel">添加面板</string>
+    <string name="dimmer">调光</string>
+    <string name="kongtiao">空调</string>
+    <string name="xinfeng">新风</string>
+    <string name="dinuan">地暖</string>
+    <string name="menci">门磁</string>
+    <string name="rentiganying">人体感应</string>
+    <string name="shuijin">水浸检测器</string>
+    <string name="pm_ruqiang">入墙PM2.5</string>
+    <string name="jinjin_btn">紧急按钮</string>
+    <string name="kaiguan">开关</string>
+    <string name="light_promat">快速连续按A键三次，在快速连续按B键三次，直到蓝灯连续闪烁3次</string>
+    <string name="zigbee_promat">请将电池绝缘片拨出后，长按设备组网2秒，直至绿灯快闪。</string>
+    <string name="hongwai">红外转发器</string>
+    <string name="jiuzuo">TOA久坐报警器</string>
+    <string name="smoke_alarm">烟雾报警器</string>
+    <string name="gas_alarm">天然气报警器</string>
+    <string name="pm25_in_wall">PM2.5入墙</string>
+    <string name="pm25_rubik">PM2.5魔方</string>
+    <string name="smart_lock">智能门锁</string>
+    <string name="dc_mini">直流电阀机械手</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <include
+        android:id="@+id/backtitle_id"
+        layout="@layout/backtitle" />
+
+    <ScrollView
+        android:id="@+id/addscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle_id">
+
+        <ImageView
+            android:id="@+id/addmacimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_panel_pic" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/addroomrelative_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle_id">
+
+        <TextView
+            android:id="@+id/roomname_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="敬请期待"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/s15" />
+    </RelativeLayout>
+</RelativeLayout>

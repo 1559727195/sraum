@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Overalls</string>
+    <!--xlistView字段说明-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新设备列表</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="pull_to_refresh_pull_label">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中.....</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+
+    <string name="banquan">\ &#169;&#032;2016&#032;Massky&#046;com&#032;Inc&#046;</string>
+</resources>

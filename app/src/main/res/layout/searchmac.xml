@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/backtitle" />
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:id="@+id/rel_list_show"
+     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/searchrela_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p85"
+        android:layout_marginRight="@dimen/p85"
+        android:layout_marginTop="@dimen/p153"
+        android:background="@drawable/scanh"></ImageView>
+
+    <ImageView
+        android:id="@+id/scanone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p185"
+        android:layout_marginTop="@dimen/p217"
+        android:background="@drawable/scan01h" />
+
+    <ImageView
+        android:id="@+id/scantwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p210"
+        android:layout_marginTop="@dimen/p270"
+        android:background="@drawable/scan02h" />
+
+    <ImageView
+        android:id="@+id/scanthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p276"
+        android:layout_marginTop="@dimen/p300"
+        android:background="@drawable/scan03h" />
+
+    <ImageView
+        android:id="@+id/scanfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p275"
+        android:layout_marginTop="@dimen/p300"
+        android:background="@drawable/scan04h" />
+
+    <ImageView
+        android:id="@+id/scanfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p210"
+        android:layout_marginTop="@dimen/p270"
+        android:background="@drawable/scan05h" />
+
+    <ImageView
+        android:id="@+id/scansix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p185"
+        android:layout_marginTop="@dimen/p217"
+        android:background="@drawable/scan06h" />
+
+    <ImageView
+        android:id="@+id/scanseven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p85"
+        android:layout_marginTop="@dimen/p217"
+        android:background="@drawable/scan07h" />
+
+    <ImageView
+        android:id="@+id/scaneight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p125"
+        android:layout_marginTop="@dimen/p323"
+        android:background="@drawable/scan08h" />
+
+    <ImageView
+        android:id="@+id/scannine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p227"
+        android:layout_marginTop="@dimen/p388"
+        android:background="@drawable/scan09h" />
+
+    <ImageView
+        android:id="@+id/scanten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p228"
+        android:layout_marginTop="@dimen/p388"
+        android:background="@drawable/scan10h" />
+
+    <ImageView
+        android:id="@+id/scaneleven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p125"
+        android:layout_marginTop="@dimen/p323"
+        android:background="@drawable/scan11h" />
+
+    <ImageView
+        android:id="@+id/scantwelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p85"
+        android:layout_marginTop="@dimen/p217"
+        android:background="@drawable/scan12h" />
+
+    <ListView
+        android:id="@+id/list_show_rev_item"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/search_txt"
+        android:cacheColorHint="#00000000"
+        android:divider="#E3E3E3"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="15dp"></ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_txt"
+        android:layout_below="@+id/searchrela_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p30"
+        android:text="@string/nosearch"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+
+    <TextView
+        android:id="@+id/gotext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p130"
+        android:layout_marginLeft="@dimen/p91"
+        android:text="@string/gosearch"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+
+    <ImageView
+        android:id="@+id/goimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/details_id"
+        android:layout_marginBottom="@dimen/p27"
+        android:layout_marginLeft="@dimen/p83"
+        android:background="@drawable/consearchh" />
+
+    <ImageView
+        android:id="@+id/detailimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/details_id"
+        android:layout_marginBottom="@dimen/p27"
+        android:layout_marginLeft="@dimen/p83"
+        android:layout_toRightOf="@+id/goimage_id"
+        android:background="@drawable/moreh" />
+
+    <TextView
+        android:id="@+id/details_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p130"
+        android:layout_marginLeft="@dimen/p107"
+        android:layout_toRightOf="@+id/gotext_id"
+        android:text="@string/details"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+
+    <ImageView
+        android:id="@+id/stopimage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stopsearch_id"
+        android:layout_marginBottom="@dimen/p27"
+        android:layout_marginLeft="@dimen/p84"
+        android:layout_toRightOf="@+id/detailimage_id"
+        android:background="@drawable/stoph" />
+
+    <TextView
+        android:id="@+id/stopsearch_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p130"
+        android:layout_marginLeft="@dimen/p107"
+        android:layout_toRightOf="@+id/details_id"
+        android:text="@string/stopsearch"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p24" />
+
+
+
+ </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_show_rev_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#E3E3E3"
+        android:visibility="gone"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="30dp"></ListView>
+</RelativeLayout>

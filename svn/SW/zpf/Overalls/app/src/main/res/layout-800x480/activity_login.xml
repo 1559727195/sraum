@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#3B5590"
+    android:layout_height="match_parent">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Massky 智慧酒店"
+         android:layout_marginTop="70dp"
+         android:layout_gravity="center_horizontal"
+         android:textColor="#EAEBF0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作服管理"
+        android:textColor="#EAEBF0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/editsharp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/name_txt"
+        android:layout_height="wrap_content">
+        <EditText  android:layout_width="0dp"
+            app:layout_widthPercent="80%"
+            android:id="@+id/edt_user_name"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:maxLength="11"
+            android:textColor="#1d1d26"
+            android:textSize="12sp"
+            android:hint="账号"
+            android:maxLines="1"
+            android:background="@null"
+            android:layout_height="25dp"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/editsharp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/name_txt"
+        android:layout_height="wrap_content">
+        <EditText  android:layout_width="0dp"
+            app:layout_widthPercent="80%"
+            android:inputType="textPassword"
+            android:id="@+id/edt_user_password"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:maxLength="11"
+            android:textColor="#1d1d26"
+            android:textSize="12sp"
+            android:hint="密码"
+            android:background="@null"
+            android:layout_height="25dp"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:text="登录"
+            android:background="@drawable/login_config_btn"
+            android:textSize="12sp"
+            android:textColor="@color/color_config"
+            app:layout_widthPercent="82%"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/start_btn_login"/>
+    </android.support.percent.PercentRelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ip_config_txt"
+        android:textColor="@color/ip_text_config"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="31dp"
+        android:textSize="12sp"
+        android:clickable="true"
+        android:text="配置服务器地址"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EAEBF0"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/banquan"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

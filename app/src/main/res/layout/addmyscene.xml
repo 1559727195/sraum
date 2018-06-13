@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <include
+        android:id="@+id/backroom_id"
+        layout="@layout/backtitle" />
+
+    <ImageView
+        android:id="@+id/lione"
+        android:layout_width="@dimen/p2"
+        android:layout_height="@dimen/p12"
+        android:layout_marginLeft="@dimen/p220"
+        android:layout_marginTop="@dimen/p279"
+        android:background="@color/e30" />
+
+    <TextView
+        android:id="@+id/scenenametext"
+        android:layout_width="@dimen/p280"
+        android:layout_height="@dimen/p50"
+        android:layout_marginLeft="@dimen/p220"
+        android:layout_marginTop="@dimen/p250"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <com.Util.ClearEditText
+        android:id="@+id/scenename"
+        android:layout_width="@dimen/p280"
+        android:layout_height="@dimen/p50"
+        android:layout_marginLeft="@dimen/p220"
+        android:layout_marginTop="@dimen/p250"
+        android:background="@null"
+        android:gravity="center"
+        android:maxLength="6"
+        android:text="休息"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p28" />
+
+    <ImageView
+        android:id="@+id/litwo"
+        android:layout_width="@dimen/p280"
+        android:layout_height="@dimen/p2"
+        android:layout_below="@+id/lione"
+        android:layout_toRightOf="@+id/lione"
+        android:background="@color/e30" />
+
+    <ImageView
+        android:id="@+id/lithree"
+        android:layout_width="@dimen/p2"
+        android:layout_height="@dimen/p12"
+        android:layout_marginTop="@dimen/p279"
+        android:layout_toRightOf="@+id/litwo"
+        android:background="@color/e30" />
+
+    <GridView
+        android:id="@+id/addscenegridview_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p345"
+        android:layout_below="@+id/litwo"
+        android:layout_marginLeft="@dimen/p39"
+        android:layout_marginRight="@dimen/p39"
+        android:layout_marginTop="@dimen/p129"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="6"></GridView>
+
+    <ImageView
+        android:id="@+id/dottedline_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/add_scene_save_line"
+        android:layout_below="@+id/addscenegridview_id"
+        android:layout_alignLeft="@+id/addscenegridview_id"
+        android:layout_alignStart="@+id/addscenegridview_id" />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_scene_save_bg"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        android:textSize="@dimen/p30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+
+</RelativeLayout>

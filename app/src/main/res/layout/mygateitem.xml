@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的网关中间小圆布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/gaterelative_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/selectimage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/graycircleh" />
+
+        <TextView
+            android:id="@+id/textone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p213"
+            android:layout_marginTop="@dimen/p21"
+            android:text="1"
+            android:textColor="@color/ece"
+            android:textSize="@dimen/p60" />
+
+        <TextView
+            android:id="@+id/topmygate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p239"
+            android:layout_marginTop="@dimen/p21"
+            android:text="TOP"
+            android:textColor="@color/ece"
+            android:textSize="@dimen/p20" />
+
+        <TextView
+            android:id="@+id/message_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p437"
+            android:layout_marginTop="@dimen/p66"
+            android:text="一栋一零三网关"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+
+        <TextView
+            android:id="@+id/textstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p15"
+            android:layout_marginTop="@dimen/p66"
+            android:layout_toRightOf="@+id/message_id"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+    </RelativeLayout>
+</RelativeLayout>

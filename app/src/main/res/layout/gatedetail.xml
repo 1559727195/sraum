@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/backtitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p154"
+        android:text="@string/gatewone"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p103"
+        android:layout_marginTop="@dimen/p259"
+        android:text="@string/gatewtwo"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p320"
+        android:layout_marginTop="@dimen/p259"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewtwo"
+        android:layout_marginLeft="@dimen/p127"
+        android:layout_marginTop="@dimen/p61"
+        android:text="@string/gatewfour"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewtwo"
+        android:layout_marginLeft="@dimen/p320"
+        android:layout_marginTop="@dimen/p61"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewfour"
+        android:layout_marginLeft="76px"
+        android:layout_marginTop="@dimen/p61"
+        android:text="固件版本"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewseven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewfour"
+        android:layout_marginLeft="@dimen/p320"
+        android:layout_marginTop="@dimen/p61"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gateweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewsix"
+        android:layout_marginLeft="@dimen/p75"
+        android:layout_marginTop="@dimen/p61"
+        android:text="@string/gateweight"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewnine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gatewsix"
+        android:layout_marginLeft="@dimen/p320"
+        android:layout_marginTop="@dimen/p61"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <TextView
+        android:id="@+id/gatewten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gateweight"
+        android:layout_marginLeft="@dimen/p78"
+        android:layout_marginTop="@dimen/p61"
+        android:text="@string/gatewten"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p26" />
+
+    <com.Util.ClearDetailEditText
+        android:id="@+id/editextdetail"
+        android:layout_width="@dimen/p312"
+        android:layout_height="@dimen/p72"
+        android:layout_below="@+id/gateweight"
+        android:layout_marginLeft="@dimen/p320"
+        android:layout_marginTop="@dimen/p40"
+        android:background="@drawable/typein"
+        android:paddingLeft="@dimen/p15"
+        android:textColor="@color/e30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/p26" />
+</RelativeLayout>

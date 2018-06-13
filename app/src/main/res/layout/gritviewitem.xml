@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于我的场景gritview  item展示-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/itemrela_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/markh">
+
+        <ImageView
+            android:id="@+id/imageitem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p34"
+            android:src="@drawable/marklamph" />
+
+        <TextView
+            android:id="@+id/textitem_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageitem_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p31"
+            android:text="@string/porchlight"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativegrit_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gitemimage"
+            android:layout_width="@dimen/d25"
+            android:layout_height="@dimen/d25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p30" />
+
+        <ImageView
+            android:id="@+id/rightline_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d25"
+            android:layout_marginTop="@dimen/p30"
+            android:layout_toRightOf="@+id/gitemimage"
+            android:src="@drawable/v_line" />
+
+        <TextView
+            android:id="@+id/gitemtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gitemimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p30"
+            android:text="@string/sceneone"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p20" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gitemtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d5"
+            android:src="@drawable/divider" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

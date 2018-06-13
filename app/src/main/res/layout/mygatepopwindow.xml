@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于点击查看详情-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxh">
+
+
+        <RelativeLayout
+            android:id="@+id/leftrelative_id"
+            android:layout_width="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="@dimen/p120">
+            <ImageView
+                android:id="@+id/trashhiamge_id"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/trashh" />
+
+            <TextView
+                android:id="@+id/trashtext_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trashhiamge_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/p16"
+                android:text="删除"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p20" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightrelative_id"
+            android:layout_width="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/p120"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/pimage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/p38"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/paperhpsd" />
+
+            <TextView
+                android:id="@+id/ptext_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pimage_id"
+                android:layout_marginRight="@dimen/p38"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.8dp"
+                android:text="详情"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p20" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rightrelativesecond_id"
+            android:layout_width="45dp"
+           android:layout_marginRight="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/p120"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/pichange_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/gateway_change_pass" />
+
+            <TextView
+                android:id="@+id/pichangetext_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pichange_id"
+                android:layout_marginTop="5dp"
+                android:text="修改密码"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/p20" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

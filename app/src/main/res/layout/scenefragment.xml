@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <GridView
+        android:id="@+id/gritviewscene_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/p17"
+        android:layout_marginRight="@dimen/p17"
+        android:horizontalSpacing="@dimen/p18"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/p14"></GridView>
+
+    <RelativeLayout
+        android:id="@+id/addscerela_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/scetext_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p283"
+            android:layout_marginTop="@dimen/p351"
+            android:text="@string/noscene"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p26" />
+
+        <Button
+            android:id="@+id/addscebtn_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p66"
+            android:layout_below="@+id/scetext_id"
+            android:layout_marginLeft="@dimen/p210"
+            android:layout_marginTop="@dimen/p56"
+            android:background="@drawable/golden"
+            android:text="@string/add"
+            android:textColor="@color/e0c"
+            android:textSize="@dimen/p26" />
+    </RelativeLayout>
+
+</RelativeLayout>

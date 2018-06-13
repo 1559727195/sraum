@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipemenu_layout"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_pm_yuan"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rel_scene_set"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11月19号"
+                android:layout_toRightOf="@+id/img_guan_scene"
+                android:textSize="14sp"
+                android:textColor="@color/smssdk_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/panel_scene_name_txt"
+                android:text="19:57"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/smssdk_gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pm2.5:"
+                android:layout_toRightOf="@+id/img_guan_scene"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="37/ug/m³"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度:"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26.9℃"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度:"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56.3%"
+                android:layout_marginLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/smssdk_gray"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
+

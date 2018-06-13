@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/white">
+
+        <GridView
+            android:id="@+id/gritview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/p18"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/p14" />
+
+    </com.andview.refreshview.XRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/addmacrela_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p351"
+            android:text="暂无场景"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p26" />
+
+        <Button
+            android:id="@+id/addmacbtn_id"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p66"
+            android:layout_below="@+id/text_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p56"
+            android:background="@drawable/golden"
+            android:text="@string/add"
+            android:textColor="@color/e0c"
+            android:textSize="@dimen/p26" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/myscneaddcircle_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d20"
+        android:background="@drawable/addcircle" />
+
+    <TextView
+        android:id="@+id/macstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/p351"
+        android:text="当前网关离线"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26"
+        android:visibility="gone" />
+</RelativeLayout>

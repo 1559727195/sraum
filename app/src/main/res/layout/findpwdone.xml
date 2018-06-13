@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--找回密码第一个页面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/startitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p90"
+            android:layout_marginTop="@dimen/p100">
+
+            <com.Util.ClearEditText
+                android:id="@+id/finpho_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/p100"
+                android:layout_marginRight="@dimen/p138"
+                android:background="@null"
+                android:hint="@string/phone"
+                android:inputType="number"
+                android:textColor="@color/c6f"
+                android:textSize="@dimen/p22" />
+
+            <Button
+                android:id="@+id/timebutton_id"
+                android:layout_width="@dimen/p130"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btnclick"
+                android:text="@string/getcode"
+                android:textColor="@color/c6f"
+                android:textSize="@dimen/p22" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p2"
+            android:layout_marginLeft="@dimen/p100"
+            android:layout_marginRight="@dimen/p100"
+            android:background="@color/ea" />
+
+        <com.Util.ClearEditText
+            android:id="@+id/finyz_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p90"
+            android:layout_marginLeft="@dimen/p100"
+            android:layout_marginRight="@dimen/p138"
+            android:background="@null"
+            android:hint="@string/checkcode"
+            android:inputType="number"
+            android:textColor="@color/c6f"
+            android:textSize="@dimen/p22" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p2"
+            android:layout_marginLeft="@dimen/p100"
+            android:layout_marginRight="@dimen/p100"
+            android:background="@color/ea" />
+
+        <Button
+            android:id="@+id/nextbtn_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p66"
+            android:layout_marginLeft="@dimen/p66"
+            android:layout_marginRight="@dimen/p66"
+            android:layout_marginTop="@dimen/p100"
+            android:background="@drawable/findbtn"
+            android:text="@string/next"
+            android:textColor="@color/e30"
+            android:textSize="@dimen/p24" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/p22"
+        android:layout_marginLeft="202px"
+        android:text="@string/bottom"
+        android:textColor="@color/e30"
+        android:textSize="@dimen/p20" />
+</RelativeLayout>

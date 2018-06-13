@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--用于添加场景item布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clore3e">
+
+    <RelativeLayout
+        android:layout_width="@dimen/p112"
+        android:layout_height="@dimen/p112">
+
+        <RelativeLayout
+            android:id="@+id/myscenerelative_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_scene_bg">
+
+            <ImageView
+                android:id="@+id/mysceneimage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

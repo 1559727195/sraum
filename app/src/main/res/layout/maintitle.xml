@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/macrelative_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p100"
+        android:layout_below="@+id/maintitledialog"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/mactext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/p19"
+        android:layout_marginTop="@dimen/p11"
+        android:text="@string/mac"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26" />
+
+    <View
+        android:id="@+id/viewone"
+        android:layout_width="@dimen/p120"
+        android:layout_height="2px"
+        android:layout_below="@+id/mactext_id"
+        android:layout_marginLeft="@dimen/p10"
+        android:layout_marginTop="@dimen/p3"
+        android:background="@color/e0c" />
+
+    <RelativeLayout
+        android:id="@+id/roomrelative_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p100"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p255"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/roomtext_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p335"
+        android:layout_marginTop="@dimen/p11"
+        android:text="场景"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26" />
+
+    <View
+        android:id="@+id/viewtwo"
+        android:layout_width="@dimen/p66"
+        android:layout_height="2px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/roomtext_id"
+        android:layout_marginRight="330px"
+        android:background="@color/e0c" />
+
+    <RelativeLayout
+        android:id="@+id/scenerelative_id"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p100"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/maintitledialog"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/scene_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/p18"
+        android:layout_marginTop="@dimen/p11"
+        android:text="房间"
+        android:textColor="@color/c6f"
+        android:textSize="@dimen/p26" />
+
+    <View
+        android:id="@+id/viewthree"
+        android:layout_width="@dimen/p66"
+        android:layout_height="@dimen/p2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scene_id"
+        android:layout_marginRight="@dimen/p12"
+        android:background="@color/e0c" />
+
+</RelativeLayout>

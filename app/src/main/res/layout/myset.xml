@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的设置界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MoreStyle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/maintitledialog"
+        layout="@layout/maintitledialog" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d200"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d40"
+        android:background="@drawable/accountbgpic"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/onerelative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageone"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:background="@drawable/accountmanagement" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/imageone"
+                android:text="@string/accountnumber"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d10"
+                android:src="@drawable/accountback" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cbe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tworelative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagetwo"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@drawable/accountshiver" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/imagetwo"
+                android:text="@string/shake"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/swibtnone"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d10"
+                MoreStyle:sb_checked_color="@color/swibtn"
+                MoreStyle:sb_show_indicator="false"></com.suke.widget.SwitchButton>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cbe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/threerelative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagethree"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@drawable/accountsound" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/imagethree"
+                android:text="@string/voice"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/swibtntwo"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d10"
+                MoreStyle:sb_checked_color="@color/swibtn"
+                MoreStyle:sb_show_indicator="false"></com.suke.widget.SwitchButton>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cbe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fourrelative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagefour"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@drawable/accgesturepassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/imagefour"
+                android:text="@string/gesturespassword"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/swibtnthree"
+                android:layout_width="54dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d10"
+                MoreStyle:sb_checked_color="@color/swibtn"
+                MoreStyle:sb_show_indicator="false"></com.suke.widget.SwitchButton>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cbe" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fiverelative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagefive"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@drawable/accountcookies" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_toRightOf="@+id/imagefive"
+                android:text="@string/cache"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/d10"
+                android:text="@string/mb"
+                android:textColor="@color/e30"
+                android:textSize="@dimen/s13" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

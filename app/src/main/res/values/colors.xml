@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_ff4a57">#ff4a57</color>
+    <color name="e0">#E0E0E0</color>
+    <color name="clore3e">#e3e3e3</color>
+    <color name="c41">#414358</color>
+    <color name="e8e">#8E8E8E</color>
+    <color name="ece">#cecece</color>
+    <color name="e2c">#e2c896</color>
+    <color name="ede">#edecee</color>
+    <color name="e9f">#9f9ea0</color>
+    <color name="e0c">#e0c48e</color>
+    <color name="e5c">#5cb5f6</color>
+    <color name="ec">#ecebed</color>
+    <color name="fo">#F0F0F0</color>
+    <color name="e30">#303030</color>
+    <color name="eb">#ebeaec</color>
+    <color name="cfc">#FCFCFC</color>
+    <color name="cbe">#BEBEBE</color>
+    <color name="c7b">#7B7B7B</color>
+    <color name="ea">#eaeaea</color>
+    <color name="white">#ffffff</color>
+    <color name="c6f">#6f6f6f</color>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorgraystatusbar">#EFEFF2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="black">#4F4F4F</color>
+    <color name="vifrification">#00000000</color>   <!-- 透明 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="swibtn">#e0c48e</color>
+    <color name="red">#bd2228</color>
+
+    <color name="colorgreen">#4BFFFF</color>
+    <color name="colororiange">#EEA512</color>
+    <color name="colorred">#DC0020</color>
+</resources>
